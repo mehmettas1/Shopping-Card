@@ -1,4 +1,5 @@
 // import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './App.css';
 import Amazon from './components/Amazon';
 import Navbar from './components/Navbar';
@@ -14,10 +15,12 @@ function App() {
   // }, [])
   
   return (
-    <div className="App">
-      <Navbar/>
-      <Amazon/>
-    </div>
+  <React.Fragment>
+    <Navbar/>
+    <Amazon/>
+
+  </React.Fragment>
+    
   );
 }
 

@@ -7,6 +7,7 @@ import "../styles/amazon.css"
 
 
 const Amazon = () => {
+
   return (
     <section>
         {list.map((item)=>(

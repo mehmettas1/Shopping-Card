@@ -1,6 +1,6 @@
 import React from 'react'
-
-const Card = (item) => {
+import '../styles/cart.css'
+const Card = ({item}) => {
     const{id,title,img,price,author} = item;
   return (
     <div className='card'>
@@ -8,6 +8,7 @@ const Card = (item) => {
             <img src={img} alt="img" />
         </div>
         <div className="details">
+             <p>{id}</p>
             <p>{title}</p>
             <p>{author}</p>
             <p>{price}</p>
