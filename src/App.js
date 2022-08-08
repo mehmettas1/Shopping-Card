@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Amazon from './components/Amazon';
+import { Cart } from './components/Cart';
 import Navbar from './components/Navbar';
 
 function App() {
@@ -23,12 +24,22 @@ const handleClick = (item)=>{
   setCart([...cart,item])
 }
   
+const handleChange = (item,d) =>{
+  const ind = cart.indexOf(item);
+  const arr = cart;
+  arr[ind].amount += d
+  if(arr[ind].amount===0) arr[ind].amount=1;
+  setCart([...arr]);
+
+}
 
 
   return (
   <React.Fragment>
-    <Navbar/>
+    <Navbar setShow = {setShow} size= {Cart.length} />
+    {show ? <Amazon/> : <Cart cart={cart} setCart={setCart} handleChange={handleChange}/>}
     <Amazon handleClick={handleClick} />
+
 
   </React.Fragment>
     

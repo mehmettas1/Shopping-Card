@@ -5,12 +5,12 @@ import "../styles/navbar.css"
 
 
 
-const Navbar = () => {
+const Navbar = ({setShow}) => {
   return (
     <nav>
         <div className="nav_box">
-            <span className="my_shop"> My shopping</span>
-            <div className="cart">
+            <span className="my_shop" onClick={()=>setShow(true)}> My shopping</span>
+            <div className="cart"onClick={()=>setShow(false)}>
                 <span>
         <FaShoppingCart/>
                 </span>

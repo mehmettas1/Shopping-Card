@@ -7,6 +7,8 @@
 .nav_box {
     background-color:#72F2EB;
     height: 10vh;
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
    
 }
