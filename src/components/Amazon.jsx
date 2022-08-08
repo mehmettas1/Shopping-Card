@@ -6,12 +6,12 @@ import "../styles/amazon.css"
 
 
 
-const Amazon = () => {
+const Amazon = ({handleClick}) => {
 
   return (
     <section>
         {list.map((item)=>(
-                <Card key={item.id} item = {item}/>
+                <Card key={item.id} item = {item} handleClick={handleClick}/>
             )
         )}
     </section>
