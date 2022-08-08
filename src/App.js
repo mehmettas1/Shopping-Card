@@ -36,9 +36,9 @@ const handleChange = (item,d) =>{
 
   return (
   <React.Fragment>
-    <Navbar setShow = {setShow} size= {Cart.length} />
-    {show ? <Amazon/> : <Cart cart={cart} setCart={setCart} handleChange={handleChange}/>}
-    <Amazon handleClick={handleClick} />
+    <Navbar setShow = {setShow} size= {cart.length} />
+    {show ?   <Amazon handleClick={handleClick} />: <Cart cart={cart} setCart={setCart} handleChange={handleChange}/>}
+   
 
 
   </React.Fragment>

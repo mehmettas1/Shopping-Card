@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "../styles/cart.css";
 export const Cart = ({cart,setCart,handleChange}) => {
 const [price, setPrice] = useState(0)
+
 const handleRemove = (id)=>{
     const arr = cart.filter((item)=>item.id!==id);
     setCart(arr);
@@ -10,7 +11,7 @@ const handleRemove = (id)=>{
 
 const handlePrice=()=>{
     let ans=0;
-    cart.map((item)=>(ans+=item.amout*item.price));
+    cart.map((item)=>(ans+=item.amount*item.price));
     setPrice(ans);
 }
 
