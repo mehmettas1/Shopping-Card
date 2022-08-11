@@ -9,12 +9,14 @@ import "../styles/amazon.css"
 const Amazon = ({handleClick}) => {
 
   return (
-    <section>
+   <div className="container">
+     <section>
         {list.map((item)=>(
                 <Card key={item.id} item = {item} handleClick={handleClick}/>
             )
         )}
     </section>
+   </div>
   )
 }
 
