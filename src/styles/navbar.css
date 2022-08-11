@@ -5,17 +5,27 @@
 }
 
 .nav_box {
-    background-color:#72F2EB;
+    background-color:#287d00;
     height: 10vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: space-between; 
+    padding: 5px 25px;   
    
 }
 button {
     background-color:orange;
     height: 25px;
     width: 100px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     cursor: pointer;
+}
+.icon {
+    color: white;
+    height: 25px;
+    width: 50px;
+    
+}
+.size {
+    color: white;
 }

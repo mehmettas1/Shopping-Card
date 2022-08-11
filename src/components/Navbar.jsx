@@ -12,9 +12,9 @@ const Navbar = ({setShow,size}) => {
             <span className="my_shop" onClick={()=>setShow(true)}> <button>My shopping</button></span>
             <div className="cart"onClick={()=>setShow(false)}>
                 <span>
-        <FaShoppingCart/>
+        <FaShoppingCart className="icon"/>
                 </span>
-                <span>{size}</span>
+                <span className="size">{size}</span>
             </div>
         </div>
     </nav>
